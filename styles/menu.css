@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+.menu {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    position: fixed;
+    background: #648C8C;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.3);
+    animation: show .5s forwards;
+  }
+  
+  .menu .logo {
+    width: 200px;
+  }
+  
+  .menu .voltar {
+    width: 200px;
+  }
+  
+  .menu .logo img {
+    width: 100%;
+  } 
+  
+  .menu .voltar img {
+    width: 4rem;
+  } 
+  
+  .menu .options ul {
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+  }
+  
+  .menu .options ul li {
+    cursor: pointer;
+  }
+  
+  .menu .options ul li + li {
+    margin-left: 2rem;
+  }
+  
+  .menu .options ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0)
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0)
+    }
+  }

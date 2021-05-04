@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <title>Hospedagem - Traveller</title>
+</head>
+
+<body>
+
+  <!-- Header  -->
+  <header>
+    <div class="hamburger">
+      <i class="fas fa-bars bars"></i>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <ul class="menu__link">
+      <li><a href="#" class="menu__item">Sua Conta <i class="fas fa-user-astronaut"></i></a></li>
+      <li><a href="#" class="menu__item">Viagens <i class="fas fa-suitcase-rolling"></i></a></li>
+      <li><a href="#" class="menu__item">Desejos <i class="fas fa-clipboard-list"></i></a></li>
+      <li><a href="#" class="menu__item">Avaliações <i class="fas fa-envelope-open-text"></i></a></li>
+      <li><a href="#" class="menu__item">Sair <i class="fas fa-sign-out-alt"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- Barra de Pesquisar  -->
+  <div class="pesquisar">
+    <input type="text" id="local" placeholder="  Pesquisar" class="pesquisar">
+    <div class="tipo__viagem">
+      <a href="">
+        <button class="btn">Trabalho</button>
+      </a>
+      <a href="">
+        <button class="btn">Negócios</button>
+      </a>
+      <a href="">
+        <button class="btn">Turismo</button>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- Seção Cards Hotéis  -->
+  <section class="container__hospedagem">
+
+    <div class="container__cards">
+
+      <h1>Hospedagem</h1>
+      <div class="divisoria"></div>
+
+      <ul class="hoteis">
+
+        <!-- IBIS Styles  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/ibis.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">IBIS Styles São Paulo Anhembi</h2>
+              <p class="endereco__hotel">
+                Av. Cruzeiro do Sul, 1709 - Santana, São Paulo - SP, Brasil
+              </p>
+              <div class="hotel_avaliacao">
+                4,95
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="ibis" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Comfort Hotel -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/comfort.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Comfort Ibirapuera</h2>
+              <p class="endereco__hotel">
+                Av. Sabiá, 825 - Indianópolis, São Paulo - SP, 04515-001
+              </p>
+              <div class="hotel_avaliacao">
+                4,93
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="comfort" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Blue Tree Premium Morumbi  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/bt-morumbi.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Blue Tree Premium Morumbi</h2>
+              <p class="endereco__hotel">
+                Av. Roque Petroni Júnior, 1000 - Vila Gertrudes, São Paulo - SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,5
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="bt-morumbi" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mercure São Paulo Pamplona  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/mercure.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Mercure São Paulo Pamplona</h2>
+              <p class="endereco__hotel">
+                R. Pamplona, 1315 - Jardim Paulista, São Paulo - SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,49
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="mercure" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Sheraton SP WTC Hotel  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/sheraton.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Sheraton São Paulo WTC Hotel</h2>
+              <p class="endereco__hotel">
+                Av. Nações Unidas, 12559 - Brooklin Novo, São Paulo SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,35
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="sheraton" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Bourbon Convention  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/bourbon.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Bourbon Convention Ibirapuera</h2>
+              <p class="endereco__hotel">
+                Bourbon Convention Ibirapuera
+              </p>
+              <div class="hotel_avaliacao">
+                4,32
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="bourbon" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Blue Tree Preimum Paulista  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/bt-paulista.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Blue Tree Premium Paulista</h2>
+              <p class="endereco__hotel">
+                Rua Peixoto Gomide, 707 - Bela Vista, São Paulo - SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,29
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="btPaulista" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Golten Tulip Paulista  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/gt.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Golden Tulip Paulista Plaza</h2>
+              <p class="endereco__hotel">
+                Alameda Santos, 85 - Jardins, São Paulo - SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,12
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="gt" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Renaissance São Paulo Hotel  -->
+        <li class="card__hotel">
+          <div class="hotel">
+            <div class="hotel__imagem">
+              <img src="./images/rena.png" />
+            </div>
+            <div class="conteudo">
+              <h2 class="nome__hotel">Renaissance São Paulo Hotel</h2>
+              <p class="endereco__hotel">
+                Alameda Santos, 2233 - Jardim Paulista, São Paulo - SP
+              </p>
+              <div class="hotel_avaliacao">
+                4,0
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="">
+                <button id="rena" class="btn">Saiba Mais</button>
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- SAIBA MAIS - Modais -->
+
+  <!-- MODAL IBIS  -->
+  <div id="ibis-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">IBIS Styles São Paulo Anhembi</h2>
+        <p class="endereco__hotel">
+          Ao lado de uma estação de metrô, este hotel moderno com tema de aviação fica a 3 km da Pinacoteca do Estado de São Paulo e a 4,4 km do Theatro Municipal de São Paulo.
+        </p>
+        <div class="hotel_avaliacao">
+          4,95
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$153,60</p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14633.92142379771!2d-46.62657520746021!3d-23.51521948466566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1128b91971707df1!2sibis%20Styles%20S%C3%A3o%20Paulo%20Anhembi!5e0!3m2!1spt-BR!2sbr!4v1619649534806!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">7,4km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL Comfort  -->
+  <div id="comfort-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Comfort Ibirapuera</h2>
+        <p class="endereco__hotel">
+          Situado em frente à Praça Nossa Senhora Aparecida, uma praça pública com uma basílica ornamentada, este hotel moderno e informal fica a 4 km da Estação Ferroviária de Vila Olímpia e do Aeroporto de Congonhas em São Paulo.
+        </p>
+        <div class="hotel_avaliacao">
+          4,95
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$123,60</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14624.17034483192!2d-46.6620212!3d-23.6028056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdef750ee62ca41bb!2sComfort%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1619655119072!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">6,4km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Blue Tree Morumbi -->
+  <div id="btMorumbi-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Blue Tree Premium Morumbi</h2>
+        <p class="endereco__hotel">
+          Localizado a 2 minutos de caminhada do Morumbi Shopping, este hotel refinado em um arranha-céu grandioso também está a 6 km do Aeroporto de Congonhas e a 8 km do Parque Ibirapuera.
+        </p>
+        <div class="hotel_avaliacao">
+          4,5
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$145,80</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.92870062585!2d-46.6964795!3d-23.6228972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd07ed725d00a38e!2sBlue%20Tree%20Premium%20Morumbi!5e0!3m2!1spt-BR!2sbr!4v1619656894353!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">9,6km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mercure  -->
+  <div id="mercure-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Mercure São Paulo Pamplona</h2>
+        <p class="endereco__hotel">
+          Hotel refinado em um arranha-céu que fica localizado a 12 minutos de caminhada de uma estação de metrô, a 1 km do Museu de Arte de São Paulo e a 3,7 km do Parque Ibirapuera.
+        </p>
+        <div class="hotel_avaliacao">
+          4,49
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$135,80</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14627.990631618703!2d-46.6581426!3d-23.5685276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8a3a403a40e5c4!2sMercure%20Sao%20Paulo%20Pamplona%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619656957202!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">1,3km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Sheraton Sao Paulo WTC Hotel-->
+  <div id="sheraton-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Sheraton São Paulo WTC Hotel</h2>
+        <p class="endereco__hotel">
+          Situado a 2 minutos de caminhada do WTC – World Trade Center São Paulo – este hotel de luxo está a 9 minutos a pé da estação do metrô e a 9 km do Parque Ibirapuera.
+        </p>
+        <div class="hotel_avaliacao">
+          4,35
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$155,30</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.463980710168!2d-46.6962422!3d-23.6091384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdef17ec1a62a235d!2sSheraton%20S%C3%A3o%20Paulo%20WTC%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619657354626!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">9,9km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!--Bourbon Convention Ibirapuera-->
+  <div id="bourbon-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Bourbon Convention Ibirapuera</h2>
+        <p class="endereco__hotel">
+          Este hotel de convenções moderno, dividido entre duas torres, fica a três quilômetros do Parque Ibirapuera e a sete quilômetros do Museu de Arte de São Paulo.
+        </p>
+        <div class="hotel_avaliacao">
+          4,32
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$132,90</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40185.4220391357!2d-46.666982979076685!3d-23.60424709666223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x988947deddbd766!2sBourbon%20Convention%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1619658079404!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">8,7km da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Blue Tree Premium Paulista  -->
+  <div id="btPaulista-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Blue Tree Premium Paulista</h2>
+        <p class="endereco__hotel">
+          Este hotel moderno com fachada de vidro fica a cinco minutos a pé do Museu de Arte de São Paulo e a quatro quilômetros do Parque Ibirapuera.
+        </p>
+        <div class="hotel_avaliacao">
+          4,29
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$166,90</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.909068419545!2d-46.6559448!3d-23.5602798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc0f48b9437fc214!2sBlue%20Tree%20Premium%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1619658724729!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">850m da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Golden Tulip Paulista Plaza-->
+  <div id="gt-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Golden Tulip Paulista Plaza
+        </h2>
+        <p class="endereco__hotel">
+          Este hotel moderno e sofisticado está a uma caminhada de 6 minutos de uma estação de metrô, a 500 metros da agitada Avenida Paulista e a 3,1 km do Parque Ibirapuera.
+        </p>
+        <div class="hotel_avaliacao">
+          4,12
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$116,90</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14627.616201325922!2d-46.6463764!3d-23.5718893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9856d09e924a4d99!2sRadisson%20Hotel%20Paulista%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1619658887853!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">500m da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Renaissance São Paulo Hotel -->
+  <div id="rena-modal" class="modal-overlay">
+    <div class="modal">
+
+      <div class="conteudo">
+        <i class="fas fa-window-close close"></i>
+        <h2 class="nome__hotel">Renaissance São Paulo Hotel
+        </h2>
+        <p class="endereco__hotel">
+          Hotel sofisticado situado em uma rua comercial. Fica a 3 minutos a pé de uma estação de metrô e a 4 minutos a pé das lojas de luxo da movimentada Avenida Paulista.
+        </p>
+        <div class="hotel_avaliacao">
+          4,0
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Preço Médio da Diária R$144,70</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.068676550554!2d-46.6624578!3d-23.5588462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1619659198746!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p id="paulista">300m da Av. Paulista</p>
+
+        <form name="review" id="review" method="post" class="review-area">
+          <p>Deixe seu comentário:</p>
+          <textarea name="review-text" id="review-text" placeholder="Escreva sua avaliação do hotel"
+            class="review"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./js/menu.js"></script>
+
+</body>
+
+<!-- Desenvolvido por Victor Ribeiro Bezerra - vitorbezzera@hotmail.com - & Leonardo Bezerra Guerra
+  para atividade de Responsividade da FIAP  -->
+
+</html>
