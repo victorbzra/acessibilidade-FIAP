@@ -26,7 +26,7 @@ header {
 }
 
 .presentation {
-  height: 55vh;
+  height: 35vh;
   background: url(../images/BACKGROUND-mobile.jpg);
   background-size: 100vw;
   background-attachment: fixed;
