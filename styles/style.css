@@ -423,6 +423,25 @@ header {
 
 /* Pontos de Quebra  */
 
+@media (min-width: 320px) {
+  .presentation {
+    height: 55vh;
+    background: url(../images/BACKGROUND-mobile.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 800px) {
+  .presentation {
+    height: 45vh;
+    background: url(../images/BACKGROUND-mobile.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+}
+
+
 @media (min-width: 640px) {
   .card__hotel {
     width: 50%;
