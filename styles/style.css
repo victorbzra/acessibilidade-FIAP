@@ -9,66 +9,88 @@ a {
   text-decoration: none;
 }
 
-header {
-  width: 100%;
-  height: 50px;
-  background-color: #648C8C;
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+@media(max-width: 1080px) {
+  :root {
+    font-size: 93.75%; /* 15px */
+  }
+
+  .presentation {
+    height: 400px;
+    background: url(../images/BACKGROUND-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .presentation .camada {
+    background: rgba(0, 0, 0, 0.13);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .presentation h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  
+  .presentation a {
+    background: rgba(0, 0, 0, 0.20); 
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    color: #fff;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    transition: background .3s;
+  }
+  
+  .presentation a:hover {
+    background: rgba(0, 0, 0, 0.25);
+  }
 }
 
-.logo a {
-  font-weight: 900;
-  color: #fff;
-  font-size: 1.5rem;
+@media(max-width: 970px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
 }
 
-.presentation {
-  height: 35vh;
-  background: url(../images/BACKGROUND-mobile.jpg);
-  background-size: 100vw;
-  background-attachment: fixed;
+@media(max-width:700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
 }
 
-.presentation .camada {
-  width: 100vw;
-  padding: 7rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media(max-width: 590px) {
+  :root {
+    font-size: 62.25% /* 10px */
+  }
+
+  .presentation {
+    height: 350px;
+  }
+
+  .presentation h1 {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+  }
+  
+  .presentation a {
+    font-size: 1.5rem;
+  }
 }
 
-.presentation h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 3rem;
-}
 
-
-.presentation a {
-  background: rgba(0, 0, 0, 0.20); 
-  padding: .5rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  border: 1px solid #fff;
-  border-radius: 2rem;
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: .4rem;
-  font-weight: 400;
-  transition: background .3s;
-}
-
-.presentation a:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
+/*
 
 .hamburger {
   cursor: pointer;
@@ -327,10 +349,6 @@ header {
   color: #fff;
 }
 
-
-
-/* Modal  */
-
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
@@ -418,17 +436,16 @@ header {
   border: 2px solid #456e6e;
 }
 
-
-
-
-/* Pontos de Quebra  */
-
 @media (min-width: 320px) {
   .presentation {
     height: 55vh;
     background: url(../images/BACKGROUND-mobile.jpg);
-    background-size: 100%;
+    background-color: red;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: red;
   }
 }
 
@@ -524,14 +541,13 @@ header {
 
   .presentation {
     height: 100vh;
-    background: url(../images/BACKGROUND.jpg);
+    background: url(../images/BACKGROUND.jpg) no-repeat;
     background-size: 100%;
     background-attachment: fixed;
   }
 
   .presentation .camada {
     width: 100%;
-    /* padding: 3rem 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,3 +586,4 @@ header {
     display: contents;
   }
 }
+*/

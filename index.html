@@ -9,76 +9,56 @@
   <link rel="stylesheet" href="./styles/menu.css" />
 
   <!-- Font Awesome  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
   <title>Traveller</title>
 </head>
 
 <body>
+  <header>
+    <nav class="menu">
+      <div class="logo">
+        <a href="">TRAVELLER</a>
+      </div>
+  
+      <div class="options">
+        <ul>
+          <li><a href="">Hospedagem</a></li>
+          <li><a href="./building.html">Pacotes</a></li>
+          <li><a href="./building.html">Meus destinos</a></li>
+          <li><a href="./building.html">Sua Conta</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="presentation">
+      <div class="camada">
+        <h1>CONHEÇA SÃO PAULO.</h1>
+        <a href="#hospedagem">HOSPEDAGEM</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="pesquisar">
+      <input type="text" id="local" placeholder="  Pesquisar" class="pesquisar">
+      <div class="tipo__viagem">
+        <a href="">
+          <button class="btn">Trabalho</button>
+        </a>
+        <a href="">
+          <button class="btn">Negócios</button>
+        </a>
+        <a href="">
+          <button class="btn">Turismo</button>
+        </a>
+    </div>
+  </main>
+<!-- 
+  
 
   
 
-  <!-- Header  -->
-
-  <!-- Menu -->
-  <!-- <nav class="menu">
-    <ul class="menu__link">
-      <li><a href="#" class="menu__item">Sua Conta <i class="fas fa-user-astronaut"></i></a></li>
-      <li><a href="#" class="menu__item">Viagens <i class="fas fa-suitcase-rolling"></i></a></li>
-      <li><a href="#" class="menu__item">Desejos <i class="fas fa-clipboard-list"></i></a></li>
-      <li><a href="#" class="menu__item">Avaliações <i class="fas fa-envelope-open-text"></i></a></li>
-      <li><a href="#" class="menu__item">Sair <i class="fas fa-sign-out-alt"></i></a></li>
-    </ul>
-  </nav> -->
-
-  <div class="menu">
-    <div class="logo">
-      <a href="">TRAVELLER.</a>
-    </div>
-
-    <div class="hamburger">
-      <i class="fas fa-bars bars"></i>
-    </div>
-
-    <div class="options">
-      <ul>
-        <li><a href="">Hospedagem</a></li>
-        <li><a href="./building.html">Pacotes</a></li>
-        <li><a href="./building.html">Meus destinos</a></li>
-        <li><a href="./building.html">Sua Conta</a></li>
-      </ul>
-    </div>
   </div>
-
-  <section class="presentation">
-    <div class="camada">
-      <h1>CONHEÇA SÃO PAULO.</h1>
-      <a href="#hospedagem">HOSPEDAGEM</a>
-    </div>
-  </section>
-
-
-
-  <!-- Barra de Pesquisar  -->
-  <div class="pesquisar">
-    <input type="text" id="local" placeholder="  Pesquisar" class="pesquisar">
-    <div class="tipo__viagem">
-      <a href="">
-        <button class="btn">Trabalho</button>
-      </a>
-      <a href="">
-        <button class="btn">Negócios</button>
-      </a>
-      <a href="">
-        <button class="btn">Turismo</button>
-      </a>
-  </div>
-
-  </div>
-
-<!-- Seção Cards Hotéis  -->
-
 
 <section class="container__main">
   <div class="content__blog">
@@ -118,7 +98,6 @@
 
     <ul class="hoteis">
 
-      <!-- IBIS Styles  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -140,7 +119,7 @@
         </div>
       </li>
 
-      <!-- Comfort Hotel -->
+    
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -162,7 +141,6 @@
         </div>
       </li>
 
-      <!-- Blue Tree Premium Morumbi  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -184,7 +162,6 @@
         </div>
       </li>
 
-      <!-- Mercure São Paulo Pamplona  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -206,7 +183,7 @@
         </div>
       </li>
 
-      <!-- Sheraton SP WTC Hotel  -->
+   
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -228,7 +205,6 @@
         </div>
       </li>
 
-      <!-- Bourbon Convention  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -250,7 +226,6 @@
         </div>
       </li>
 
-      <!-- Blue Tree Preimum Paulista  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -272,7 +247,6 @@
         </div>
       </li>
 
-      <!-- Golten Tulip Paulista  -->
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -294,7 +268,7 @@
         </div>
       </li>
 
-      <!-- Renaissance São Paulo Hotel  -->
+  
       <li class="card__hotel">
         <div class="hotel">
           <div class="hotel__imagem">
@@ -322,9 +296,6 @@
 
 </section>
 
-  <!-- SAIBA MAIS - Modais -->
-
-  <!-- MODAL IBIS  -->
   <div id="ibis-modal" class="modal-overlay">
     <div class="modal">
 
@@ -359,7 +330,6 @@
     </div>
   </div>
 
-  <!-- MODAL Comfort  -->
   <div id="comfort-modal" class="modal-overlay">
     <div class="modal">
 
@@ -392,7 +362,6 @@
     </div>
   </div>
 
-  <!-- Blue Tree Morumbi -->
   <div id="btMorumbi-modal" class="modal-overlay">
     <div class="modal">
 
@@ -425,7 +394,7 @@
     </div>
   </div>
 
-  <!-- Mercure  -->
+
   <div id="mercure-modal" class="modal-overlay">
     <div class="modal">
 
@@ -457,8 +426,7 @@
 
     </div>
   </div>
-  
-  <!-- Sheraton Sao Paulo WTC Hotel-->
+
   <div id="sheraton-modal" class="modal-overlay">
     <div class="modal">
 
@@ -491,7 +459,7 @@
     </div>
   </div>
   
-  <!--Bourbon Convention Ibirapuera-->
+
   <div id="bourbon-modal" class="modal-overlay">
     <div class="modal">
 
@@ -523,8 +491,7 @@
 
     </div>
   </div>
-  
-  <!-- Blue Tree Premium Paulista  -->
+
   <div id="btPaulista-modal" class="modal-overlay">
     <div class="modal">
 
@@ -556,8 +523,7 @@
 
     </div>
   </div>
-  
-  <!-- Golden Tulip Paulista Plaza-->
+
   <div id="gt-modal" class="modal-overlay">
     <div class="modal">
 
@@ -590,8 +556,7 @@
 
     </div>
   </div>
-  
-  <!-- Renaissance São Paulo Hotel -->
+
   <div id="rena-modal" class="modal-overlay">
     <div class="modal">
 
@@ -623,16 +588,12 @@
       </div>
 
     </div>
-  </div>
-
-
+  </div> -->
 
   <script src="./js/scroll.js"></script>
   <script src="./js/menu.js"></script>
 
 </body>
-
 <!-- Desenvolvido por Victor Ribeiro Bezerra - vitorbezzera@hotmail.com - & Leonardo Bezerra Guerra
   para atividade de Responsividade da FIAP  -->
-
 </html>

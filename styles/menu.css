@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 .menu {
@@ -18,22 +19,12 @@
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.3);
     animation: show .5s forwards;
   }
-  
-  .menu .logo {
-    width: 200px;
+
+  .menu .logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
-  
-  .menu .voltar {
-    width: 200px;
-  }
-  
-  .menu .logo img {
-    width: 100%;
-  } 
-  
-  .menu .voltar img {
-    width: 4rem;
-  } 
   
   .menu .options ul {
     list-style: none;
