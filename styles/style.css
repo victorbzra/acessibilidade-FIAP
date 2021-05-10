@@ -7,6 +7,12 @@
   font-style: normal;
 }
 
+:root {
+  --primaryColor: #03588C;
+  --secondaryColor: #03588C;
+}
+
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f5f5f5;
@@ -19,6 +25,8 @@ body.dislexy {
 a {
   text-decoration: none;
 }
+
+
 .presentation {
   height: 350px;
   background: url(../images/BACKGROUND-mobile.jpg);
@@ -77,7 +85,7 @@ a {
 }
 
 .pesquisar input:focus {
-  border: 2px solid #456e6e;
+  border: 2px solid #023059;
 }
 .tipo__viagem {
   display: flex;
@@ -95,18 +103,20 @@ a {
   margin: auto;
   padding: 0.8rem;
   font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 00.07rem;
   text-transform: uppercase;
   border-radius: 1rem;
   width: 100%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #648C8C;
+  background: var(--secondaryColor);
   transition: background-color .5s;
 }
 
 .tipo__viagem .btn:hover {
   background: #f7f3eb;
-  color: #648C8C;
+  color: var(--secondaryColor);
 }
 
 .container__main {
@@ -119,7 +129,7 @@ a {
 .divisoria {
   width: 40px;
   height: 5px;
-  background-color: #456e6e;
+  background-color: var(--primaryColor);
   border-radius: 1rem;
   margin: 0 auto;
 }
@@ -235,22 +245,24 @@ a {
   text-align: center;
 }
 .container__cards .btn {
-  color: #648C8C;
+  color: #fff;
   margin: auto;
   padding: 0.8rem;
   font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
   text-transform: uppercase;
   border-radius: 1rem;
   display: block;
   width: 50%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #f7f3eb;
+  background: var(--secondaryColor);
   transition: 0.3s;
 }
 .container__cards .btn:hover {
-  background: #648C8C;
-  color: #fff;
+  background: #faf5f0;
+  color: var(--secondaryColor);
 }
 .modal-overlay.active {
   opacity: 1;
@@ -315,28 +327,30 @@ a {
 }
 
 .review-area .btn {
-  color: #648C8C;
+  color: #fff;
   margin: auto;
   padding: 0.8rem;
   font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
   text-transform: uppercase;
   border-radius: 1rem;
   display: block;
   width: 50%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #f7f3eb;
+  background: var(--secondaryColor);
   transition: 0.3s;
   margin-bottom: 1rem;
 }
 
 .review-area .btn:hover {
-  background: #648C8C;
-  color: #fff;
+  background: #faf5f0;
+  color: var(--secondaryColor);
 }
 
 .review:focus {
-  border: 2px solid #456e6e;
+  border: 2px solid #023059;
 }
 
 @media(min-width: 1040px) {

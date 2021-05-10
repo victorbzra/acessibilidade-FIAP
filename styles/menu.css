@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
+
 .menu {
     text-transform: uppercase;
     font-weight: 400;
@@ -10,7 +11,7 @@
     justify-content: space-between;
     padding: 1rem 4rem;
     position: fixed;
-    background: #648C8C;
+    background:var(--primaryColor);
     top: 0;
     left: 0;
     right: 0;
@@ -22,6 +23,7 @@
     color: #fff;
     font-size: 1.5rem;
     font-weight: 900;
+    font-family: Lato;
   }
   
   .menu .options ul {
