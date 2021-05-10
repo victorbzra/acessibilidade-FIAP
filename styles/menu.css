@@ -1,8 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
 .menu {
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     height: 7vh;
@@ -54,4 +52,59 @@
       opacity: 1;
       transform: translate3d(0, 0, 0)
     }
+  }
+
+  .acessibilidade {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .acessibilidade img {
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  .optionsAcessibilidade {
+    position: fixed;
+    top: 46px;
+    right: -100%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: right .5s;
+  }
+
+  .optionsAcessibilidade.disable {
+    right: 10px;
+  }
+
+  .optionsAcessibilidade h2:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .optionsAcessibilidade .optionsTexto {
+    display: flex;
+  }
+
+  .optionsAcessibilidade .optionsTexto div + div {
+    margin-left: 1rem;
+  }
+
+  .optionsAcessibilidade .optionsTexto div {
+    cursor: pointer;
+  }
+
+  .optionsAcessibilidade hr {
+    border: none;
+    height: 1px;
+    background: #c1c1c1;
+  }
+
+  .optionsAcessibilidade .dislexia {
+    cursor: pointer;
   }

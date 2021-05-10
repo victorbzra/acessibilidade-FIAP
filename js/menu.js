@@ -2,10 +2,6 @@ const iconHamburger = document.querySelector('.hamburger');
 
 const menuLink = document.querySelector('.menu__link');
 
-iconHamburger.addEventListener('click',() => {
-    menuLink.classList.toggle('open');
-});
-
 
 
 // Get the modal
@@ -183,4 +179,33 @@ function closeModal() {
         event.preventDefault()
         closeModal()
       })
+  })
+
+
+  const acessibilidade = document.querySelector('.acessibilidade')
+  const optionsAcessibilidade = document.querySelector('.optionsAcessibilidade')
+
+  acessibilidade.addEventListener('click', () => {
+    optionsAcessibilidade.classList.toggle('disable')
+  })
+
+  const dislexia = document.querySelector('.dislexia')
+  dislexia.addEventListener('click', () => {
+    body.classList.toggle('dislexy')
+  })
+
+  const font1 = document.querySelector('.font1')
+  const font2 = document.querySelector('.font2')
+  const font3 = document.querySelector('.font3')
+
+  font1.addEventListener('click', () => {
+    body.style.fontSize = '16px'
+  })
+
+  font2.addEventListener('click', () => {
+    body.style.fontSize = '20px'
+  })
+
+  font3.addEventListener('click', () => {
+    body.style.fontSize = '30px'
   })

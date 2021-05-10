@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
+@font-face {
+  font-family: 'Dislexy';
+  src: url('../fonts/OpenDyslexic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f5f5f5;
+}
+
+body.dislexy {
+  font-family: 'Dislexy';
 }
 
 a {
