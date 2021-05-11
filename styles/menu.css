@@ -19,7 +19,8 @@
     animation: show .5s forwards;
   }
 
-  .menu .logo a {
+  .menu .logo a, 
+  .mobile .logo a{
     color: #fff;
     font-size: 1.5rem;
     font-weight: 900;
@@ -109,4 +110,79 @@
 
   .optionsAcessibilidade .dislexia {
     cursor: pointer;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .menu-hamburguer.disable{
+    display: none;
+  } 
+
+  @media(max-width: 1024px) {
+   .menu{
+     display: none;
+   }
+
+   .mobile{
+    display: flex;
+    background-color: var(--primaryColor);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .menu-hamburguer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: right .5s;
+  }
+  .menu-hamburguer.disable{
+    right: -100%;
+    
+  }
+  .menu-hamburguer .options a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  
+    
+  }
+
+  .options{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .options ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20vw ;
+  }
+
+  .options ul li{
+
+    margin: 20px 10px;
+
+  }
+
+  .close{
+    padding: 10px 0 0 15px;
+  }
+
+  .close img{
+    width: 35px;
+  }
+
+
+  
+    
   }

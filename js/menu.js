@@ -209,3 +209,22 @@ function closeModal() {
   font3.addEventListener('click', () => {
     body.style.fontSize = '30px'
   })
+
+  const hamburger = document.querySelector(".hamburger")
+
+  const menuMobile = document.querySelector(".menu-hamburguer")
+
+  hamburger.addEventListener("click",function(){
+    
+
+    menuMobile.classList.remove("disable")
+
+  })
+  
+  const closeMobile = document.querySelector (".close")
+
+  closeMobile.addEventListener("click",function(){
+
+    menuMobile.classList.add("disable")
+    
+  })
