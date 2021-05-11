@@ -182,12 +182,15 @@ function closeModal() {
   })
 
 
-  const acessibilidade = document.querySelector('.acessibilidade')
+  const acessibilidade = document.querySelectorAll('.acessibilidade')
   const optionsAcessibilidade = document.querySelector('.optionsAcessibilidade')
 
-  acessibilidade.addEventListener('click', () => {
-    optionsAcessibilidade.classList.toggle('disable')
+  acessibilidade.forEach((item)=>{
+    item.addEventListener('click', () => {
+      optionsAcessibilidade.classList.toggle('disable')
+    })
   })
+  
 
   const dislexia = document.querySelector('.dislexia')
   dislexia.addEventListener('click', () => {
