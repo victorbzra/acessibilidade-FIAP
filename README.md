@@ -10,8 +10,4 @@
 
   <h2>VLibras para surdos</h2>
   <img src="./github/vlibras.gif">
-
-  <ul>
-    <li>Trabalhamos também no contraste das cores do nosso site</li>
-  </ul>
 </div>
